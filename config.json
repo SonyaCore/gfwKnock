@@ -1,0 +1,10 @@
+{
+  "listen_port": 8080,
+  "cloud_flare_ip": "45.85.118.88",
+  "cloud_flare_port": 443,
+  "socket_timeout": "60",
+  "accept_time_sleep": "10",
+  "fragment_sleep": "100",
+  "l_fragment": 77
+
+}
