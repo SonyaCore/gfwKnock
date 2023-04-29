@@ -56,7 +56,7 @@ example of config.json :
 Licensed under the [GPL-3][license] license.
 
 
-[license]: LICENCE
+[license]: LICENSE
 [go]: https://img.shields.io/badge/Go-cyan?logo=go
 
 
