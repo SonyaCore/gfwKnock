@@ -38,7 +38,7 @@ gfwKnock Uses default a configuration file with the following specifications :
 
 example of config.json :
 
-```json
+```bash
 {
   // key : value : type
   "listen_port": 8080, // Integer
