@@ -12,7 +12,6 @@ func (C Server) InitialConfiguration() Server {
 	C.CloudFlareIP = viper.GetString("cloud_flare_ip")
 	C.CloudFlarePort = viper.GetInt("cloud_flare_port")
 	C.SocketTimeout = viper.GetDuration("socket_timeout") * time.Second
-	C.AcceptTimeSleep = viper.GetDuration("accept_time_sleep") * time.Millisecond
 	C.FragmentSleep = viper.GetDuration("fragment_sleep") * time.Millisecond
 	C.LFragment = viper.GetInt("l_fragment")
 
