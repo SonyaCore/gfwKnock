@@ -1,3 +1,4 @@
+// Package config provides functions for loading and managing configuration.
 package config
 
 import (
@@ -5,7 +6,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-// LoadConfig loads json configuration file
+// Load loads json configuration file
 func Load(path string) {
 	viper.SetConfigName("config")
 	viper.SetConfigType("json")
@@ -15,5 +16,4 @@ func Load(path string) {
 	if err != nil {             // Handle errors reading the config file
 		panic(fmt.Errorf("fatal error config file: %w", err))
 	}
-
 }
