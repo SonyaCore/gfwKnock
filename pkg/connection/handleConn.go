@@ -36,7 +36,9 @@ func (C Server) handleConnection(backend net.Conn) {
 			if err == io.EOF {
 				break
 			}
-			fmt.Errorf("error : %s", err.Error())
+			errMsg := fmt.Errorf("error : %s", err.Error())
+			// Handle or log the error:
+			fmt.Println(errMsg)
 			return
 		}
 

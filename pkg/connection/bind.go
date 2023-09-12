@@ -1,3 +1,4 @@
+// Package connection provides functions for managing network connections.
 package connection
 
 import (
@@ -6,6 +7,7 @@ import (
 	"net"
 )
 
+// Bind listens on the specified address and handles incoming connections.
 func (C Server) Bind(addr string) {
 	l, err := net.Listen("tcp", addr)
 	if err != nil {
@@ -16,7 +18,9 @@ func (C Server) Bind(addr string) {
 	for {
 		conn, err := l.Accept()
 		if err != nil {
-			fmt.Errorf("accepting connection failed : %v", err)
+			errMsg := fmt.Errorf("accepting connection failed : %v", err)
+			// Handle or log the error:
+			fmt.Println(errMsg)
 			continue
 		}
 

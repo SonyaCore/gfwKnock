@@ -1,3 +1,4 @@
+// Package ulimit provides a function to set the ulimit (maximum number of open file descriptors) on Linux and Darwin (macOS) systems.
 package ulimit
 
 import (
@@ -6,6 +7,7 @@ import (
 	"syscall"
 )
 
+// SetULimit sets the ulimit (maximum number of open file descriptors) to a specified value.
 func SetULimit() error {
 	if runtime.GOOS == "linux" || runtime.GOOS == "darwin" {
 		var rLimit syscall.Rlimit

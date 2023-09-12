@@ -7,6 +7,7 @@ import (
 	"time"
 )
 
+// InitialConfiguration initializes the server configuration by reading values from Viper and setting defaults.
 func (C Server) InitialConfiguration() Server {
 	C.ListenPort = viper.GetInt("listen_port")
 	C.CloudFlareIP = viper.GetString("cloud_flare_ip")
